@@ -1,0 +1,13 @@
+OBJECT_BASE 3219635.btg
+OBJECT LIBV.btg
+OBJECT_SHARED Models/Airport/beacon.xml 16.934881 40.765310 345.0 0.00
+OBJECT_SHARED Models/Airport/windsock_lit.xml 16.922357 40.782130 340.5 0.00
+OBJECT_SHARED Models/Airport/windsock_lit.xml 16.922457 40.775698 340.4 0.00
+OBJECT_SHARED Models/Airport/windsock_lit.xml 16.947046 40.761883 357.5 0.00
+OBJECT_SHARED Models/Airport/windsock_lit.xml 16.944477 40.760204 352.9 0.00
+
+
+OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.94590020 40.76176360 352.9404 322.0 0.0 0.7
+
+
+
