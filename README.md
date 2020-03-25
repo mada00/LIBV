@@ -1,7 +1,7 @@
 # LIBV
 LIBV_airport
 The military airport Gioia del Colle, ICAO LIBV is located in the Puglia region in southern Italy.
-The first step of total overhaul of the current airport was to position the Shelters in the current configuration and they are perfectly adapted to the scenario that flightgear makes available. I (mada) and LefThirtysix will proceed with the modeling of all the objects and structures present and we will try to activate a traffic of military aircraft.
+The first step of total overhaul of the current airport was to position the Shelters in the current configuration and they are perfectly adapted to the scenario that flightgear makes available. I (mada) and LEF36 will proceed with the modeling of all the objects and structures present and we will try to activate a traffic of military aircraft.
 
 Here is a list of aircraft that in aviation history have used this type of shelter
  
