@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    
+    <path>Military_shelter_internal.ac</path>
+    
+    <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>100</max-m>
+    </animation>
+    
+    <nasal>
+        <load><![CDATA[
+            print("##### Load module Military_shelter_internal");
+        ]]></load>
+        <unload><![CDATA[
+            print("##### Unload module Military_shelter_internal");
+        ]]></unload>
+    </nasal>
+    
+    <animation>
+        <type>select</type>
+        <object-name>shelter_day_lights_01</object-name>
+        <object-name>shelter_day_lights_02</object-name>
+        <object-name>shelter_day_lights_03</object-name>
+        <object-name>shelter_day_lights_04</object-name>
+        <object-name>shelter_day_lights_05</object-name>
+        <object-name>shelter_day_lights_06</object-name>
+        <object-name>shelter_day_lights_07</object-name>
+        <object-name>shelter_day_lights_08</object-name>
+        <object-name>Plane.000_day</object-name>
+        <object-name>Plane.034_day</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>sim/scenery/shelter_type_01/day_light</property>
+                    <value type="double">0.01</value>
+                </greater-than>
+            </and>
+        </condition>
+    </animation>
+
+    <model>
+        <name>shelter_day_lights_01</name>
+        <path>Military_shelter_lights_internal.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -12.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>shelter_day_lights_02</name>
+        <path>Military_shelter_lights_internal.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -9.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>shelter_day_lights_03</name>
+        <path>Military_shelter_lights_internal.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -6.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>shelter_day_lights_04</name>
+        <path>Military_shelter_lights_internal.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -3.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>shelter_day_lights_05</name>
+        <path>Military_shelter_lights_internal.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 0.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>shelter_day_lights_06</name>
+        <path>Military_shelter_lights_internal.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 3.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>shelter_day_lights_07</name>
+        <path>Military_shelter_lights_internal.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 6.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>shelter_day_lights_08</name>
+        <path>Military_shelter_lights_internal.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 9.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <!-- Night lights -->
+    
+    <animation>
+        <type>select</type>
+        <object-name>shelter_internal_night_01</object-name>
+        <object-name>shelter_internal_night_02</object-name>
+        <object-name>shelter_internal_night_03</object-name>
+        <object-name>shelter_internal_night_04</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>sim/scenery/shelter_type_01/night_light</property>
+                    <value type="double">0.01</value>
+                </greater-than>
+            </and>
+        </condition>
+    </animation>
+
+    <model>
+        <name>shelter_internal_night_01</name>
+        <path>Military_shelter_lights_internal_night.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -9.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>shelter_internal_night_02</name>
+        <path>Military_shelter_lights_internal_night.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -3.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>shelter_internal_night_03</name>
+        <path>Military_shelter_lights_internal_night.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 3.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>shelter_internal_night_04</name>
+        <path>Military_shelter_lights_internal_night.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 9.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>Plane.034</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <command>nasal</command>
+                <script><![CDATA[
+                    var setLight = getprop("sim/scenery/shelter_type_01/set_light");
+                    if (setLight == nil) {
+                        setLight = 1
+                    } elsif (setLight >= 2) {
+                        setLight = 0;
+                    } else {
+                        setLight = setLight + 1;
+                    };
+                    setprop("sim/scenery/shelter_type_01/set_light",setLight);
+                    setprop("sim/scenery/shelter_type_01/scene_light_factor", 0.3 + (1.0 - getprop("rendering/scene/diffuse/red")));
+                    if (setLight == 0) {
+                        setprop("sim/scenery/shelter_type_01/day_light",0.0);
+                        setprop("sim/scenery/shelter_type_01/night_light",0.0);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_red",0.0);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_green",0.0);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_blue",0.0);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_red",0.0);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_green",0.0);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_blue",0.0);
+                    } else {
+                        if (setLight == 1) {
+                            setprop("sim/scenery/shelter_type_01/day_light",1.0);
+                            setprop("sim/scenery/shelter_type_01/night_light",0.0);
+                            setprop("sim/scenery/shelter_type_01/day_light_emission_red",0.38);
+                            setprop("sim/scenery/shelter_type_01/day_light_emission_green",0.42);
+                            setprop("sim/scenery/shelter_type_01/day_light_emission_blue",0.45);
+                            setprop("sim/scenery/shelter_type_01/night_light_emission_red",0.38);
+                            setprop("sim/scenery/shelter_type_01/night_light_emission_green",0.42);
+                            setprop("sim/scenery/shelter_type_01/night_light_emission_blue",0.45);
+                        } else {
+                            setprop("sim/scenery/shelter_type_01/day_light",0.0);
+                            setprop("sim/scenery/shelter_type_01/night_light",1.0);
+                            setprop("sim/scenery/shelter_type_01/day_light_emission_red",0.0);
+                            setprop("sim/scenery/shelter_type_01/day_light_emission_green",0.0);
+                            setprop("sim/scenery/shelter_type_01/day_light_emission_blue",0.0);
+                            setprop("sim/scenery/shelter_type_01/night_light_emission_red",0.15);
+                            setprop("sim/scenery/shelter_type_01/night_light_emission_green",0.0);
+                            setprop("sim/scenery/shelter_type_01/night_light_emission_blue",0.8);
+                        };
+                    };
+                ]]></script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>Plane.000</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <command>nasal</command>
+                <script><![CDATA[
+                    var setLight = getprop("sim/scenery/shelter_type_01/set_light");
+                    if (setLight == nil) {
+                        setLight = 1
+                    } elsif (setLight >= 1) {
+                        setLight = 0;
+                    } else {
+                        setLight = setLight + 1;
+                    };
+                    setprop("sim/scenery/shelter_type_01/set_light",setLight);
+                    setprop("sim/scenery/shelter_type_01/scene_light_factor", 0.3 + (1.0 - getprop("rendering/scene/diffuse/red")));
+                    if (setLight == 0) {
+                        setprop("sim/scenery/shelter_type_01/day_light",0.0);
+                        setprop("sim/scenery/shelter_type_01/night_light",0.0);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_red",0.0);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_green",0.0);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_blue",0.0);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_red",0.0);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_green",0.0);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_blue",0.0);
+                    } else {
+                        setprop("sim/scenery/shelter_type_01/day_light",1.0);
+                        setprop("sim/scenery/shelter_type_01/night_light",0.0);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_red",0.38);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_green",0.42);
+                        setprop("sim/scenery/shelter_type_01/day_light_emission_blue",0.45);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_red",0.38);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_green",0.42);
+                        setprop("sim/scenery/shelter_type_01/night_light_emission_blue",0.45);
+                    };
+                ]]></script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>material</type> 
+        <name>Plane.000_day</name>
+        <object-name>Plane.000</object-name>
+        <diffuse>	
+            <red>0.9</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
+            <factor-prop>sim/scenery/shelter_type_01/day_light</factor-prop>
+        </diffuse>
+        <ambient>
+            <red>0.2</red>
+            <green>0.2</green>
+            <blue>0.2</blue>
+        </ambient>
+        <emission>	
+            <red-prop>sim/scenery/shelter_type_01/day_light_emission_red</red-prop>
+            <green-prop>sim/scenery/shelter_type_01/day_light_emission_green</green-prop>
+            <blue-prop>sim/scenery/shelter_type_01/day_light_emission_blue</blue-prop>
+            <factor-prop>sim/scenery/shelter_type_01/scene_light_factor</factor-prop>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>material</type> 
+        <name>Plane.034_day</name>
+        <object-name>Plane.034</object-name>
+        <diffuse>	
+            <red>0.9</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
+        </diffuse>
+        <ambient>
+            <red>0.2</red>
+            <green>0.2</green>
+            <blue>0.2</blue>
+        </ambient>
+        <emission>	
+            <red-prop>sim/scenery/shelter_type_01/night_light_emission_red</red-prop>
+            <green-prop>sim/scenery/shelter_type_01/night_light_emission_green</green-prop>
+            <blue-prop>sim/scenery/shelter_type_01/night_light_emission_blue</blue-prop>
+            <factor-prop>sim/scenery/shelter_type_01/scene_light_factor</factor-prop>
+        </emission>
+    </animation>
+    
+</PropertyList>
