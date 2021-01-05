@@ -9,7 +9,7 @@
         <min-m>0</min-m>
         <max-m>10000</max-m>
     </animation>
-    <!--
+    
     <nasal>
         <load><![CDATA[
             var activate = getprop("sim/scenery/shelter_type_01/activate");
@@ -36,8 +36,7 @@
             };
         ]]></unload>
     </nasal>
-    -->
-    <!--
+    
     <model>
         <name>shelter_day_lights_01</name>
         <path>Military_shelter_animations.xml</path>
@@ -47,8 +46,7 @@
             <z-m> 0.0 </z-m>
         </offsets>
     </model>
-    -->
-
+    
     <light>
         <name>external-lights-01</name>
         <type>spot</type>
@@ -148,5 +146,5 @@
             </greater-than>
         </condition>
     </animation>
-
+    
 </PropertyList>
