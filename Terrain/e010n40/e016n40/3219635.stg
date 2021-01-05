@@ -6,7 +6,7 @@ OBJECT_SHARED Models/Airport/windsock_lit.xml 16.922457 40.775698 340.4 0.00
 OBJECT_SHARED Models/Airport/windsock_lit.xml 16.947046 40.761883 357.5 0.00
 OBJECT_SHARED Models/Airport/windsock_lit.xml 16.944477 40.760204 352.9 0.00
 
-OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.94590020 40.76176360 352.9404 322.0 0.0 0.7
+OBJECT_SHARED Models/Military_Shelter/Military_shelter_lights_base.xml 16.94590020 40.76176360 352.9404 322.0 0.0 0.7
 OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.94687557 40.76229949 352.9023 33.0 -0.4 -0.7
 OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.94587647 40.76299033 350.6516 349.5 0.5 1.1
 OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.94330030 40.76472558 348.7459 120.0 0.0 0.6
@@ -28,6 +28,4 @@ OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.94535838 40.755734
 OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.92976861 40.77688119 338.0279 38.6 0.0 1.1
 OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.93703736 40.77011557 342.8809 38.6 -0.5 3.5
 OBJECT_SHARED Models/Military_Shelter/Military_shelter.xml 16.93800504 40.76922092 344.0437 7.8 1.3 3.3
-
-
 
