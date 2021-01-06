@@ -7,20 +7,16 @@
     <animation>
         <type>range</type>
         <min-m>0</min-m>
-        <max-m>100</max-m>
+        <max-m>2000</max-m>
     </animation>
-    
-    <nasal>
-        <load><![CDATA[
-            print("##### Load module Military_shelter_internal");
-        ]]></load>
-        <unload><![CDATA[
-            print("##### Unload module Military_shelter_internal");
-        ]]></unload>
-    </nasal>
     
     <animation>
         <type>select</type>
+        <object-name>shelter_day_lights_top_01</object-name>
+        <object-name>shelter_day_lights_top_02</object-name>
+        <object-name>shelter_day_lights_top_03</object-name>
+        <object-name>shelter_day_lights_top_04</object-name>
+        <object-name>shelter_day_lights_top_05</object-name>
         <object-name>shelter_day_lights_01</object-name>
         <object-name>shelter_day_lights_02</object-name>
         <object-name>shelter_day_lights_03</object-name>
@@ -28,7 +24,6 @@
         <object-name>shelter_day_lights_05</object-name>
         <object-name>shelter_day_lights_06</object-name>
         <object-name>shelter_day_lights_07</object-name>
-        <object-name>shelter_day_lights_08</object-name>
         <object-name>Plane.000_day</object-name>
         <object-name>Plane.034_day</object-name>
         <condition>
@@ -41,49 +36,31 @@
         </condition>
     </animation>
 
-    <model>
-        <name>shelter_day_lights_01</name>
-        <path>Military_shelter_lights_internal.xml</path>
-        <offsets>
-            <x-m> 0.0 </x-m>
-            <y-m> -12.0 </y-m>
-            <z-m> 0.0 </z-m>
-        </offsets>
-    </model>
-    
-    <model>
-        <name>shelter_day_lights_02</name>
-        <path>Military_shelter_lights_internal.xml</path>
-        <offsets>
-            <x-m> 0.0 </x-m>
-            <y-m> -9.0 </y-m>
-            <z-m> 0.0 </z-m>
-        </offsets>
-    </model>
+    <!-- Top lights -->
 
     <model>
-        <name>shelter_day_lights_03</name>
-        <path>Military_shelter_lights_internal.xml</path>
+        <name>shelter_day_lights_top_01</name>
+        <path>Military_shelter_lights_internal_top.xml</path>
         <offsets>
             <x-m> 0.0 </x-m>
-            <y-m> -6.0 </y-m>
+            <y-m> -10.0 </y-m>
             <z-m> 0.0 </z-m>
         </offsets>
     </model>
     
     <model>
-        <name>shelter_day_lights_04</name>
-        <path>Military_shelter_lights_internal.xml</path>
+        <name>shelter_day_lights_top_02</name>
+        <path>Military_shelter_lights_internal_top.xml</path>
         <offsets>
             <x-m> 0.0 </x-m>
-            <y-m> -3.0 </y-m>
+            <y-m> -5.0 </y-m>
             <z-m> 0.0 </z-m>
         </offsets>
     </model>
     
     <model>
-        <name>shelter_day_lights_05</name>
-        <path>Military_shelter_lights_internal.xml</path>
+        <name>shelter_day_lights_top_03</name>
+        <path>Military_shelter_lights_internal_top.xml</path>
         <offsets>
             <x-m> 0.0 </x-m>
             <y-m> 0.0 </y-m>
@@ -92,8 +69,70 @@
     </model>
     
     <model>
-        <name>shelter_day_lights_06</name>
-        <path>Military_shelter_lights_internal.xml</path>
+        <name>shelter_day_lights_top_04</name>
+        <path>Military_shelter_lights_internal_top.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 5.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>shelter_day_lights_top_05</name>
+        <path>Military_shelter_lights_internal_top.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 10.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+
+    <!-- neon lights -->
+
+    <model>
+        <name>shelter_day_lights_01</name>
+        <path>Military_shelter_lights_internal_neon.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -9.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>shelter_day_lights_02</name>
+        <path>Military_shelter_lights_internal_neon.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -6.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>shelter_day_lights_03</name>
+        <path>Military_shelter_lights_internal_neon.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> -3.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>shelter_day_lights_04</name>
+        <path>Military_shelter_lights_internal_neon.xml</path>
+        <offsets>
+            <x-m> 0.0 </x-m>
+            <y-m> 0.0 </y-m>
+            <z-m> 0.0 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>shelter_day_lights_05</name>
+        <path>Military_shelter_lights_internal_neon.xml</path>
         <offsets>
             <x-m> 0.0 </x-m>
             <y-m> 3.0 </y-m>
@@ -102,26 +141,26 @@
     </model>
 
     <model>
-        <name>shelter_day_lights_07</name>
-        <path>Military_shelter_lights_internal.xml</path>
+        <name>shelter_day_lights_06</name>
+        <path>Military_shelter_lights_internal_neon.xml</path>
         <offsets>
             <x-m> 0.0 </x-m>
             <y-m> 6.0 </y-m>
             <z-m> 0.0 </z-m>
         </offsets>
     </model>
-
+    
     <model>
-        <name>shelter_day_lights_08</name>
-        <path>Military_shelter_lights_internal.xml</path>
+        <name>shelter_day_lights_07</name>
+        <path>Military_shelter_lights_internal_neon.xml</path>
         <offsets>
             <x-m> 0.0 </x-m>
             <y-m> 9.0 </y-m>
             <z-m> 0.0 </z-m>
         </offsets>
     </model>
-    
-    <!-- Night lights -->
+
+    <!-- Night neon lights -->
     
     <animation>
         <type>select</type>
