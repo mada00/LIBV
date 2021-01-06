@@ -36,7 +36,7 @@
             };
         ]]></unload>
     </nasal>
-    
+
     <model>
         <name>shelter_day_lights_01</name>
         <path>Military_shelter_animations.xml</path>
@@ -46,14 +46,14 @@
             <z-m> 0.0 </z-m>
         </offsets>
     </model>
-    
+
     <light>
         <name>external-lights-01</name>
-        <type>spot</type>
+        <type>point</type>
         <position>
-            <x-m>7.0</x-m>
-            <y-m>-20.0</y-m>
-            <z-m>6.0</z-m>
+            <x-m>0.0</x-m>
+            <y-m>-27.0</y-m>
+            <z-m>10.0</z-m>
         </position>
         <direction>
             <pitch-deg>20.0</pitch-deg>
@@ -67,9 +67,9 @@
             <a>1</a>
         </ambient>
         <diffuse>
-            <r>20</r>
-            <g>22.0</g>
-            <b>25.0</b>
+            <r>55.0</r>
+            <g>35.0</g>
+            <b>05.0</b>
             <a>1</a>
         </diffuse>
         <specular>
@@ -80,56 +80,12 @@
         </specular>
         <attenuation>
             <c>1.0</c>
-            <l>0.5</l>
-            <q>0.05</q>
+            <l>0.4</l>
+            <q>0.4</q>
         </attenuation>
         <spot-exponent>1</spot-exponent>
         <spot-cutoff>89</spot-cutoff>
-        <range-m>20.0</range-m>
-        <dim-factor>
-            <property>sim/scenery/shelter_type_01/scene_light_factor</property>
-        </dim-factor>
-    </light>
-    
-    <light>
-        <name>external-lights-02</name>
-        <type>spot</type>
-        <position>
-            <x-m>-7.0</x-m>
-            <y-m>-20.0</y-m>
-            <z-m>6.0</z-m>
-        </position>
-        <direction>
-            <pitch-deg>-20.0</pitch-deg>
-            <roll-deg>-45.0</roll-deg>
-            <heading-deg>0.0</heading-deg>
-        </direction>
-        <ambient>
-            <r>0.5</r>
-            <g>0.5</g>
-            <b>0.5</b>
-            <a>1</a>
-        </ambient>
-        <diffuse>
-            <r>20</r>
-            <g>22.0</g>
-            <b>25.0</b>
-            <a>1</a>
-        </diffuse>
-        <specular>
-            <r>0.2</r>
-            <g>0.2</g>
-            <b>0.2</b>
-            <a>1</a>
-        </specular>
-        <attenuation>
-            <c>1.0</c>
-            <l>0.5</l>
-            <q>0.05</q>
-        </attenuation>
-        <spot-exponent>1</spot-exponent>
-        <spot-cutoff>89</spot-cutoff>
-        <range-m>20.0</range-m>
+        <range-m>40.0</range-m>
         <dim-factor>
             <property>sim/scenery/shelter_type_01/scene_light_factor</property>
         </dim-factor>
@@ -138,7 +94,6 @@
     <animation>
         <type>select</type>
         <object-name>external-lights-01</object-name>
-        <object-name>external-lights-02</object-name>
         <condition>
             <greater-than>
                 <property>sim/scenery/shelter_type_01/scene_light_factor</property>
@@ -146,5 +101,31 @@
             </greater-than>
         </condition>
     </animation>
+
+    <model>
+        <name>light_external_spot-dx</name>
+        <path>Military_shelter_lights_external_spot.xml</path>
+        <offsets>
+            <x-m>5.3</x-m>
+            <y-m>-14.55 </y-m>
+            <z-m>7.15</z-m>
+            <pitch-deg>0.0</pitch-deg>
+            <roll-deg>-20.0</roll-deg>
+            <heading-deg>-90.0</heading-deg>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>light_external_spot-sx</name>
+        <path>Military_shelter_lights_external_spot.xml</path>
+        <offsets>
+            <x-m>-5.3</x-m>
+            <y-m>-14.55 </y-m>
+            <z-m>7.15</z-m>
+            <pitch-deg>0.0</pitch-deg>
+            <roll-deg>20.0</roll-deg>
+            <heading-deg>-90.0</heading-deg>
+        </offsets>
+    </model>
     
 </PropertyList>
