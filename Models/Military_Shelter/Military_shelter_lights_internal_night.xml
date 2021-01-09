@@ -22,13 +22,13 @@
             <a>1</a>
         </ambient>
         <diffuse>
-            <r>20.0</r>
+            <r>10.0</r>
             <g>0.0</g>
             <b>65.0</b>
             <a>1</a>
         </diffuse>
         <specular>
-            <r>10.0</r>
+            <r>5.0</r>
             <g>0.0</g>
             <b>20.0</b>
             <a>1</a>
@@ -66,13 +66,13 @@
             <a>1</a>
         </ambient>
         <diffuse>
-            <r>20.0</r>
+            <r>10.0</r>
             <g>0.0</g>
             <b>65.0</b>
             <a>1</a>
         </diffuse>
         <specular>
-            <r>10.0</r>
+            <r>5.0</r>
             <g>0.0</g>
             <b>20.0</b>
             <a>1</a>
@@ -110,13 +110,13 @@
             <a>1</a>
         </ambient>
         <diffuse>
-            <r>20.0</r>
+            <r>10.0</r>
             <g>0.0</g>
             <b>65.0</b>
             <a>1</a>
         </diffuse>
         <specular>
-            <r>10.0</r>
+            <r>5.0</r>
             <g>0.0</g>
             <b>20.0</b>
             <a>1</a>
@@ -154,13 +154,13 @@
             <a>1</a>
         </ambient>
         <diffuse>
-            <r>20.0</r>
+            <r>10.0</r>
             <g>0.0</g>
             <b>65.0</b>
             <a>1</a>
         </diffuse>
         <specular>
-            <r>10.0</r>
+            <r>5.0</r>
             <g>0.0</g>
             <b>20.0</b>
             <a>1</a>
