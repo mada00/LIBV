@@ -4,38 +4,100 @@
     
     <path>Military_shelter_external.ac</path>
     
+    <nasal>
+        <load><![CDATA[
+            var id = getprop("sim/scenery/shelter_type_01/activate_set_light_listner");
+            if (id == nil or id < 0) {
+                
+                var id = setlistener("sim/scenery/shelter_type_01/set_light", func {
+                    
+                    var setLight = getprop("sim/scenery/shelter_type_01/set_light");
+                    print("##### setLight: ",setLight);
+                    
+                    var scene_light_factor = 0.3 + (1.0 - getprop("rendering/scene/diffuse/red"));
+                    setprop("sim/scenery/shelter_type_01/scene_light_factor", scene_light_factor);
+                    if (setLight == 0) {
+                        setprop("sim/scenery/shelter_type_01/day_light",0.0);
+                        setprop("sim/scenery/shelter_type_01/neon_light_diffuse",scene_light_factor * 1.4);
+                        setprop("sim/scenery/shelter_type_01/neon_blue_diffuse",scene_light_factor * 0.8);
+                        setprop("sim/scenery/shelter_type_01/neon_light_mirror",scene_light_factor * 0.8);
+                        setprop("sim/scenery/shelter_type_01/top_light_diffuse",scene_light_factor);
+                        setprop("sim/scenery/shelter_type_01/top_light_emission_red",0.0);
+                        setprop("sim/scenery/shelter_type_01/top_light_emission_green",0.0);
+                        setprop("sim/scenery/shelter_type_01/top_light_emission_blue",0.0);
+                        setprop("sim/scenery/shelter_type_01/neon_light_emission_red",0.0);
+                        setprop("sim/scenery/shelter_type_01/neon_light_emission_green",0.0);
+                        setprop("sim/scenery/shelter_type_01/neon_light_emission_blue",0.0);
+                        setprop("sim/scenery/shelter_type_01/set_light_push_lamp_green",0.2);
+                        setprop("sim/scenery/shelter_type_01/set_light_push_lamp_yellow",0.2);
+                        setprop("sim/scenery/shelter_type_01/set_light_push_lamp_blue",0.2);
+                    } else {
+                        if (setLight == 1 or setLight == 2) {
+                            setprop("sim/scenery/shelter_type_01/day_light",1.0);
+                            setprop("sim/scenery/shelter_type_01/neon_light_diffuse",1);
+                            setprop("sim/scenery/shelter_type_01/neon_blue_diffuse",scene_light_factor);
+                            setprop("sim/scenery/shelter_type_01/neon_light_mirror",0.5);
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_red",1.0);
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_green",1.0);
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_blue",1.0);
+                            if (setLight == 2) {
+                                setprop("sim/scenery/shelter_type_01/top_light_diffuse",1);
+                                setprop("sim/scenery/shelter_type_01/top_light_emission_red",1.0);
+                                setprop("sim/scenery/shelter_type_01/top_light_emission_green",1.02);
+                                setprop("sim/scenery/shelter_type_01/top_light_emission_blue",1.0);
+                            } else {
+                                setprop("sim/scenery/shelter_type_01/top_light_diffuse",0.3);
+                                setprop("sim/scenery/shelter_type_01/top_light_emission_red",0.0);
+                                setprop("sim/scenery/shelter_type_01/top_light_emission_green",0.0);
+                                setprop("sim/scenery/shelter_type_01/top_light_emission_blue",0.0);
+                            };
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_green",0.2);
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_yellow",1.0);
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_blue",0.2);
+                        } elsif (setLight == 3) {
+                            setprop("sim/scenery/shelter_type_01/day_light",0.0);
+                            setprop("sim/scenery/shelter_type_01/top_light_diffuse",0.3);
+                            setprop("sim/scenery/shelter_type_01/neon_light_diffuse",1.2);
+                            setprop("sim/scenery/shelter_type_01/neon_light_mirror",1);
+                            setprop("sim/scenery/shelter_type_01/neon_blue_diffuse",2.0);
+                            setprop("sim/scenery/shelter_type_01/top_light_emission_red",0.02);
+                            setprop("sim/scenery/shelter_type_01/top_light_emission_green",0.0);
+                            setprop("sim/scenery/shelter_type_01/top_light_emission_blue",0.15);
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_red",0.05);
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_green",0.0);
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_blue",1.0);
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_green",0.2);
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_yellow",0.2);
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_blue",1.0);
+                        } elsif (setLight == 4) {
+                            setprop("sim/scenery/shelter_type_01/day_light",1.0);
+                            setprop("sim/scenery/shelter_type_01/night_light",0.0);
+                            setprop("sim/scenery/shelter_type_01/neon_light_diffuse",0.5);
+                            setprop("sim/scenery/shelter_type_01/top_light_diffuse",0.1);                        
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_red",0.1);
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_green",0.11);
+                            setprop("sim/scenery/shelter_type_01/neon_light_emission_blue",0.12);
+                            setprop("sim/scenery/shelter_type_01/top_light_emission_red",0.38);
+                            setprop("sim/scenery/shelter_type_01/top_light_emission_green",0.42);
+                            setprop("sim/scenery/shelter_type_01/top_light_emission_blue",0.45);
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_green",1.0);
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_yellow",0.2);
+                            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_blue",0.2);
+                        };
+                    };
+                    
+                }, 1, 0);
+            };
+            setprop("sim/scenery/shelter_type_01/activate_set_light_listner",id);
+            print("##### activate_set_light_listner id : ",id);
+        ]]></load>
+    </nasal>
+    
     <animation>
         <type>range</type>
         <min-m>0</min-m>
         <max-m>10000</max-m>
     </animation>
-    
-    <nasal>
-        <load><![CDATA[
-            var activate = getprop("sim/scenery/shelter_type_01/activate");
-            if (activate == nil or activate <= 0) {
-                var timer_automatism = maketimer(2.0, func() {
-                    var activate = getprop("sim/scenery/shelter_type_01/activate");
-                    if (activate >= 1) {
-                        setprop("sim/scenery/shelter_type_01/scene_light_factor",0.3 + 1 - getprop("rendering/scene/diffuse/red"));
-                    };
-                });
-                timer_automatism.start();
-                activate = 1;
-            } else {
-                activate += 1;
-            };
-            setprop("sim/scenery/shelter_type_01/activate",activate);
-        ]]></load>
-        <unload><![CDATA[
-            var activate = getprop("sim/scenery/shelter_type_01/activate");
-            if (activate <= 1) {
-                setprop("sim/scenery/shelter_type_01/activate",-1);
-            } else {
-                setprop("sim/scenery/shelter_type_01/activate",activate - 1);
-            };
-        ]]></unload>
-    </nasal>
 
     <model>
         <name>shelter_day_lights_01</name>
