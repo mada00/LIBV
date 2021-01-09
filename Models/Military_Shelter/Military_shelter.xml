@@ -22,10 +22,15 @@
                 });
                 timer_automatism.start();
                 activate = 1;
+                
             } else {
                 activate += 1;
             };
             setprop("sim/scenery/shelter_type_01/activate",activate);
+            setprop("sim/scenery/shelter_type_01/set_light",0);
+            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_green",0.5);
+            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_yellow",0.5);
+            setprop("sim/scenery/shelter_type_01/set_light_push_lamp_blue",0.5);
         ]]></load>
         <unload><![CDATA[
             var activate = getprop("sim/scenery/shelter_type_01/activate");
