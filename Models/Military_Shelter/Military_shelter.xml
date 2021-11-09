@@ -101,12 +101,12 @@
         <name>light_external_spot-dx</name>
         <path>Military_shelter_lights_external_spot.xml</path>
         <offsets>
-            <x-m>5.3</x-m>
-            <y-m>-14.55 </y-m>
-            <z-m>7.15</z-m>
+            <x-m>4.15</x-m>
+            <y-m>-19.31 </y-m>
+            <z-m>8.30</z-m>
             <pitch-deg>0.0</pitch-deg>
             <roll-deg>-20.0</roll-deg>
-            <heading-deg>-90.0</heading-deg>
+            <heading-deg>0.0</heading-deg>
         </offsets>
     </model>
     
@@ -114,12 +114,12 @@
         <name>light_external_spot-sx</name>
         <path>Military_shelter_lights_external_spot.xml</path>
         <offsets>
-            <x-m>-5.3</x-m>
-            <y-m>-14.55 </y-m>
-            <z-m>7.15</z-m>
+            <x-m>-4.15</x-m>
+            <y-m>-19.31 </y-m>
+            <z-m>8.30</z-m>
             <pitch-deg>0.0</pitch-deg>
             <roll-deg>20.0</roll-deg>
-            <heading-deg>-90.0</heading-deg>
+            <heading-deg0.0</heading-deg>
         </offsets>
     </model>
 </PropertyList>
